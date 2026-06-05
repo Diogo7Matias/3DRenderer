@@ -1,0 +1,19 @@
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/gpu/xr/SDL_openxrdyn.c.o: \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/SDL_openxrdyn.c \
+ /usr/include/stdc-predef.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/SDL_internal.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/SDL_openxrdyn.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/SDL_openxr_internal.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/../../video/khronos/openxr/openxr.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/../../video/khronos/openxr/openxr_platform_defines.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/../../video/khronos/openxr/openxr_platform.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/../../video/khronos/openxr/openxr.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/gpu/xr/SDL_openxrsym.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_dlopennote.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_openxr.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_stdinc.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_gpu.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_begin_code.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_close_code.h

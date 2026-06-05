@@ -1,0 +1,11 @@
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o: \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/SDL_hidapi_steamdeck.c \
+ /usr/include/stdc-predef.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/SDL_internal.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/../SDL_sysjoystick.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/../SDL_joystick_c.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/SDL_hidapijoystick_c.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/../usb_ids.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/steam/controller_constants.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/steam/controller_structs.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/joystick/hidapi/steam/controller_structs.h

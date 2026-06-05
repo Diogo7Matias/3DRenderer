@@ -1,0 +1,8 @@
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/CMakeFiles/rendering-pipeline.dir
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/CMakeFiles/edit_cache.dir
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/CMakeFiles/rebuild_cache.dir
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL/CMakeFiles/SDL3-shared.dir
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL/CMakeFiles/SDL3_test.dir
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL/CMakeFiles/SDL_uclibc.dir
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL/CMakeFiles/edit_cache.dir
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL/CMakeFiles/rebuild_cache.dir

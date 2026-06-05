@@ -1,0 +1,99 @@
+{
+	"abstract" : true,
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"find_package",
+			"CheckEGL",
+			"set_target_properties",
+			"set_property"
+		],
+		"files" : 
+		[
+			"/usr/share/cmake/Modules/FindOpenGL.cmake",
+			"vendored/SDL/cmake/sdlchecks.cmake",
+			"vendored/SDL/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1889,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 869,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 834,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 835,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 837,
+				"parent" : 3
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "OpenGL::GL::@8fb704815aaca498baa2",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "OpenGL::OpenGL::@8fb704815aaca498baa2"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "OpenGL::GLX::@8fb704815aaca498baa2"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "OpenGL::OpenGL::@8fb704815aaca498baa2"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "OpenGL::GLX::@8fb704815aaca498baa2"
+		}
+	],
+	"local" : true,
+	"name" : "OpenGL::GL",
+	"paths" : 
+	{
+		"build" : "vendored/SDL",
+		"source" : "vendored/SDL"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}
