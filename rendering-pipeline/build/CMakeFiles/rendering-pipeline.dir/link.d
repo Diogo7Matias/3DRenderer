@@ -5,6 +5,7 @@ Debug/rendering-pipeline: \
   CMakeFiles/rendering-pipeline.dir/src/main.cpp.o \
   CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o \
   CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o \
+  CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o \
   Debug/libSDL3.so.0.5.0 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libm.so \
@@ -49,6 +50,8 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o:
 CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o:
 
 CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o:
+
+CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o:
 
 Debug/libSDL3.so.0.5.0:
 

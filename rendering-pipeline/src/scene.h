@@ -9,12 +9,12 @@
 class Scene {
     std::vector<Vec3> _vertices;
     // std::vector<Light> _lights;
-    // std::vector<Camera> _cameras;
+    std::vector<Camera> _cameras;
 
 public:
     Scene() {}
     
-    std::vector<Vec3> vertices() { return _vertices; }
+    std::vector<Vec3> vertices() const { return _vertices; }
 
     void add(Geometry::Cube cube);
     void add(Geometry::Sphere sphere);

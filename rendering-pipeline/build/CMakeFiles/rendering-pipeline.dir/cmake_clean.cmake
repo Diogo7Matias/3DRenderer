@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o.d"
   "CMakeFiles/rendering-pipeline.dir/src/main.cpp.o"
   "CMakeFiles/rendering-pipeline.dir/src/main.cpp.o.d"
+  "CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o"
+  "CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o.d"
   "CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o"
   "CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o.d"
   "Debug/rendering-pipeline"

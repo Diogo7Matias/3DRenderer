@@ -22,5 +22,5 @@ void Scene::add(Geometry::Sphere sphere) {
 }
 
 void Scene::add(Camera camera) {
-    // TODO
+    _cameras.push_back(camera);
 }

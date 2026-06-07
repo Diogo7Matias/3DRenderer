@@ -1,7 +1,7 @@
 #include <SDL3/SDL.h>
-#include <iostream>
 
 #include "math/vec3.h"
+#include "renderer.h"
 #include "scene.h"
 #include "geometry.h"
 #include "camera.h"
@@ -13,7 +13,9 @@
 const int WIDTH  = 800;
 const int HEIGHT = 600;
 
+Renderer renderer = Renderer();
 Scene scene = Scene();
+Camera currentCamera;
 
 void createGeometry() {
     Vec3 pos = Vec3(1, 1, 1);
@@ -23,10 +25,15 @@ void createGeometry() {
 }
 
 void createCameras() {
-    Vec3 pos = Vec3(1, 1, 1);
+    Vec3 pos = Vec3(1, 0, 0);
 
-    Camera camera = OrthographicCamera(pos);
-    scene.add(camera);
+    Camera camera1 = OrthographicCamera(pos, -10, 10, 10, -10, 0.1, 100);
+    scene.add(camera1);
+
+    Camera camera2 = OrthographicCamera(-10, 10, 10, -10, 0.1, 100);
+    scene.add(camera2);
+
+    currentCamera = camera1;
 }
 
 void createLights() {
@@ -37,9 +44,9 @@ int main() {
     SDL_Init(SDL_INIT_VIDEO);
 
     SDL_Window* window = SDL_CreateWindow("Renderer", WIDTH, HEIGHT, 0);
-    SDL_Renderer* renderer = SDL_CreateRenderer(window, NULL);
+    SDL_Renderer* sdl_renderer = SDL_CreateRenderer(window, NULL);
     SDL_Texture* texture = SDL_CreateTexture(
-        renderer,
+        sdl_renderer,
         SDL_PIXELFORMAT_ARGB8888,
         SDL_TEXTUREACCESS_STREAMING,
         WIDTH, HEIGHT
@@ -54,9 +61,7 @@ int main() {
     createCameras();
     createLights();
 
-    for (Vec3 v : scene.vertices()) {
-        std::cout << "Vertex: " << v.x << ", " << v.y << ", " << v.z << std::endl;
-    }
+    renderer.render(scene, currentCamera);
 
     while (running) {
         while (SDL_PollEvent(&event)) {
@@ -74,13 +79,13 @@ int main() {
         memset(framebuffer, 0, sizeof(framebuffer));
 
         SDL_UpdateTexture(texture, NULL, framebuffer, WIDTH * sizeof(uint32_t));
-        SDL_RenderClear(renderer);
-        SDL_RenderTexture(renderer, texture, NULL, NULL);
-        SDL_RenderPresent(renderer);
+        SDL_RenderClear(sdl_renderer);
+        SDL_RenderTexture(sdl_renderer, texture, NULL, NULL);
+        SDL_RenderPresent(sdl_renderer);
     }
 
     SDL_DestroyTexture(texture);
-    SDL_DestroyRenderer(renderer);
+    SDL_DestroyRenderer(sdl_renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
     return 0;

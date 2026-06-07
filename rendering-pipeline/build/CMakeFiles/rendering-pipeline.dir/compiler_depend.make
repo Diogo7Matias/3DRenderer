@@ -4,12 +4,121 @@
 CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o: /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.cpp \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec3.h \
-  /usr/include/stdc-predef.h
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/16.1.1/backward/binders.h \
+  /usr/include/c++/16.1.1/bit \
+  /usr/include/c++/16.1.1/bits/concept_check.h \
+  /usr/include/c++/16.1.1/bits/cpp_type_traits.h \
+  /usr/include/c++/16.1.1/bits/exception.h \
+  /usr/include/c++/16.1.1/bits/exception_defines.h \
+  /usr/include/c++/16.1.1/bits/iterator_concepts.h \
+  /usr/include/c++/16.1.1/bits/move.h \
+  /usr/include/c++/16.1.1/bits/new_except.h \
+  /usr/include/c++/16.1.1/bits/predefined_ops.h \
+  /usr/include/c++/16.1.1/bits/ptr_traits.h \
+  /usr/include/c++/16.1.1/bits/ranges_cmp.h \
+  /usr/include/c++/16.1.1/bits/requires_hosted.h \
+  /usr/include/c++/16.1.1/bits/specfun.h \
+  /usr/include/c++/16.1.1/bits/std_abs.h \
+  /usr/include/c++/16.1.1/bits/stdexcept_throw.h \
+  /usr/include/c++/16.1.1/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16.1.1/bits/stl_algobase.h \
+  /usr/include/c++/16.1.1/bits/stl_construct.h \
+  /usr/include/c++/16.1.1/bits/stl_function.h \
+  /usr/include/c++/16.1.1/bits/stl_iterator.h \
+  /usr/include/c++/16.1.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/16.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/16.1.1/bits/stl_pair.h \
+  /usr/include/c++/16.1.1/bits/utility.h \
+  /usr/include/c++/16.1.1/bits/version.h \
+  /usr/include/c++/16.1.1/cmath \
+  /usr/include/c++/16.1.1/compare \
+  /usr/include/c++/16.1.1/concepts \
+  /usr/include/c++/16.1.1/debug/assertions.h \
+  /usr/include/c++/16.1.1/debug/debug.h \
+  /usr/include/c++/16.1.1/ext/numeric_traits.h \
+  /usr/include/c++/16.1.1/ext/type_traits.h \
+  /usr/include/c++/16.1.1/limits \
+  /usr/include/c++/16.1.1/new \
+  /usr/include/c++/16.1.1/pstl/pstl_config.h \
+  /usr/include/c++/16.1.1/tr1/bessel_function.tcc \
+  /usr/include/c++/16.1.1/tr1/beta_function.tcc \
+  /usr/include/c++/16.1.1/tr1/ell_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/exp_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/gamma.tcc \
+  /usr/include/c++/16.1.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/16.1.1/tr1/legendre_function.tcc \
+  /usr/include/c++/16.1.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16.1.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16.1.1/tr1/special_function_util.h \
+  /usr/include/c++/16.1.1/type_traits \
+  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
 
 CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/main.cpp \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/camera.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec3.h \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/renderer.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_assert.h \
@@ -72,6 +181,165 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_version.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_video.h \
   /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/16.1.1/backward/binders.h \
+  /usr/include/c++/16.1.1/bit \
+  /usr/include/c++/16.1.1/bits/alloc_traits.h \
+  /usr/include/c++/16.1.1/bits/allocator.h \
+  /usr/include/c++/16.1.1/bits/concept_check.h \
+  /usr/include/c++/16.1.1/bits/cpp_type_traits.h \
+  /usr/include/c++/16.1.1/bits/erase_if.h \
+  /usr/include/c++/16.1.1/bits/exception.h \
+  /usr/include/c++/16.1.1/bits/exception_defines.h \
+  /usr/include/c++/16.1.1/bits/functional_hash.h \
+  /usr/include/c++/16.1.1/bits/hash_bytes.h \
+  /usr/include/c++/16.1.1/bits/invoke.h \
+  /usr/include/c++/16.1.1/bits/iterator_concepts.h \
+  /usr/include/c++/16.1.1/bits/max_size_type.h \
+  /usr/include/c++/16.1.1/bits/memory_resource.h \
+  /usr/include/c++/16.1.1/bits/memoryfwd.h \
+  /usr/include/c++/16.1.1/bits/move.h \
+  /usr/include/c++/16.1.1/bits/new_allocator.h \
+  /usr/include/c++/16.1.1/bits/new_except.h \
+  /usr/include/c++/16.1.1/bits/new_throw.h \
+  /usr/include/c++/16.1.1/bits/predefined_ops.h \
+  /usr/include/c++/16.1.1/bits/ptr_traits.h \
+  /usr/include/c++/16.1.1/bits/range_access.h \
+  /usr/include/c++/16.1.1/bits/ranges_base.h \
+  /usr/include/c++/16.1.1/bits/ranges_cmp.h \
+  /usr/include/c++/16.1.1/bits/ranges_util.h \
+  /usr/include/c++/16.1.1/bits/requires_hosted.h \
+  /usr/include/c++/16.1.1/bits/specfun.h \
+  /usr/include/c++/16.1.1/bits/std_abs.h \
+  /usr/include/c++/16.1.1/bits/stdexcept_throw.h \
+  /usr/include/c++/16.1.1/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16.1.1/bits/stl_algobase.h \
+  /usr/include/c++/16.1.1/bits/stl_bvector.h \
+  /usr/include/c++/16.1.1/bits/stl_construct.h \
+  /usr/include/c++/16.1.1/bits/stl_function.h \
+  /usr/include/c++/16.1.1/bits/stl_iterator.h \
+  /usr/include/c++/16.1.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/16.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/16.1.1/bits/stl_pair.h \
+  /usr/include/c++/16.1.1/bits/stl_uninitialized.h \
+  /usr/include/c++/16.1.1/bits/stl_vector.h \
+  /usr/include/c++/16.1.1/bits/uses_allocator.h \
+  /usr/include/c++/16.1.1/bits/uses_allocator_args.h \
+  /usr/include/c++/16.1.1/bits/utility.h \
+  /usr/include/c++/16.1.1/bits/vector.tcc \
+  /usr/include/c++/16.1.1/bits/version.h \
+  /usr/include/c++/16.1.1/cmath \
+  /usr/include/c++/16.1.1/compare \
+  /usr/include/c++/16.1.1/concepts \
+  /usr/include/c++/16.1.1/cstddef \
+  /usr/include/c++/16.1.1/debug/assertions.h \
+  /usr/include/c++/16.1.1/debug/debug.h \
+  /usr/include/c++/16.1.1/ext/alloc_traits.h \
+  /usr/include/c++/16.1.1/ext/numeric_traits.h \
+  /usr/include/c++/16.1.1/ext/type_traits.h \
+  /usr/include/c++/16.1.1/initializer_list \
+  /usr/include/c++/16.1.1/limits \
+  /usr/include/c++/16.1.1/new \
+  /usr/include/c++/16.1.1/numbers \
+  /usr/include/c++/16.1.1/pstl/pstl_config.h \
+  /usr/include/c++/16.1.1/tr1/bessel_function.tcc \
+  /usr/include/c++/16.1.1/tr1/beta_function.tcc \
+  /usr/include/c++/16.1.1/tr1/ell_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/exp_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/gamma.tcc \
+  /usr/include/c++/16.1.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/16.1.1/tr1/legendre_function.tcc \
+  /usr/include/c++/16.1.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16.1.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16.1.1/tr1/special_function_util.h \
+  /usr/include/c++/16.1.1/tuple \
+  /usr/include/c++/16.1.1/type_traits \
+  /usr/include/c++/16.1.1/vector \
+  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
+
+CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o: /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/renderer.cpp \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/camera.h \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.h \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/mat4.h \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec3.h \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec4.h \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/renderer.h \
+  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.h \
+  /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -91,9 +359,19 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -101,8 +379,6 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
@@ -194,6 +470,7 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /usr/include/c++/16.1.1/bits/ranges_cmp.h \
   /usr/include/c++/16.1.1/bits/ranges_util.h \
   /usr/include/c++/16.1.1/bits/requires_hosted.h \
+  /usr/include/c++/16.1.1/bits/specfun.h \
   /usr/include/c++/16.1.1/bits/std_abs.h \
   /usr/include/c++/16.1.1/bits/stdexcept_except.h \
   /usr/include/c++/16.1.1/bits/stdexcept_throw.h \
@@ -220,6 +497,7 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /usr/include/c++/16.1.1/cctype \
   /usr/include/c++/16.1.1/cerrno \
   /usr/include/c++/16.1.1/clocale \
+  /usr/include/c++/16.1.1/cmath \
   /usr/include/c++/16.1.1/compare \
   /usr/include/c++/16.1.1/concepts \
   /usr/include/c++/16.1.1/cstddef \
@@ -250,6 +528,18 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /usr/include/c++/16.1.1/string \
   /usr/include/c++/16.1.1/string_view \
   /usr/include/c++/16.1.1/system_error \
+  /usr/include/c++/16.1.1/tr1/bessel_function.tcc \
+  /usr/include/c++/16.1.1/tr1/beta_function.tcc \
+  /usr/include/c++/16.1.1/tr1/ell_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/exp_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/gamma.tcc \
+  /usr/include/c++/16.1.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/16.1.1/tr1/legendre_function.tcc \
+  /usr/include/c++/16.1.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16.1.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16.1.1/tr1/special_function_util.h \
   /usr/include/c++/16.1.1/tuple \
   /usr/include/c++/16.1.1/type_traits \
   /usr/include/c++/16.1.1/typeinfo \
@@ -278,14 +568,12 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
@@ -294,16 +582,57 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o: /home/diogo/Documents/3D-2D-Re
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
 
 CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o: /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.cpp \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/camera.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec3.h \
   /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/16.1.1/backward/binders.h \
   /usr/include/c++/16.1.1/bit \
@@ -332,6 +661,8 @@ CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o: /home/diogo/Documents/3D-2D-R
   /usr/include/c++/16.1.1/bits/ranges_cmp.h \
   /usr/include/c++/16.1.1/bits/ranges_util.h \
   /usr/include/c++/16.1.1/bits/requires_hosted.h \
+  /usr/include/c++/16.1.1/bits/specfun.h \
+  /usr/include/c++/16.1.1/bits/std_abs.h \
   /usr/include/c++/16.1.1/bits/stdexcept_throw.h \
   /usr/include/c++/16.1.1/bits/stdexcept_throwfwd.h \
   /usr/include/c++/16.1.1/bits/stl_algobase.h \
@@ -349,6 +680,7 @@ CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o: /home/diogo/Documents/3D-2D-R
   /usr/include/c++/16.1.1/bits/utility.h \
   /usr/include/c++/16.1.1/bits/vector.tcc \
   /usr/include/c++/16.1.1/bits/version.h \
+  /usr/include/c++/16.1.1/cmath \
   /usr/include/c++/16.1.1/compare \
   /usr/include/c++/16.1.1/concepts \
   /usr/include/c++/16.1.1/cstddef \
@@ -362,6 +694,18 @@ CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o: /home/diogo/Documents/3D-2D-R
   /usr/include/c++/16.1.1/new \
   /usr/include/c++/16.1.1/numbers \
   /usr/include/c++/16.1.1/pstl/pstl_config.h \
+  /usr/include/c++/16.1.1/tr1/bessel_function.tcc \
+  /usr/include/c++/16.1.1/tr1/beta_function.tcc \
+  /usr/include/c++/16.1.1/tr1/ell_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/exp_integral.tcc \
+  /usr/include/c++/16.1.1/tr1/gamma.tcc \
+  /usr/include/c++/16.1.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/16.1.1/tr1/legendre_function.tcc \
+  /usr/include/c++/16.1.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/16.1.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16.1.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16.1.1/tr1/special_function_util.h \
   /usr/include/c++/16.1.1/tuple \
   /usr/include/c++/16.1.1/type_traits \
   /usr/include/c++/16.1.1/vector \
@@ -369,12 +713,17 @@ CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o: /home/diogo/Documents/3D-2D-R
   /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
 
 Debug/rendering-pipeline: /usr/lib/Scrt1.o \
@@ -397,11 +746,14 @@ Debug/rendering-pipeline: /usr/lib/Scrt1.o \
   /usr/lib/libmvec.so.1 \
   CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o \
   CMakeFiles/rendering-pipeline.dir/src/main.cpp.o \
+  CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o \
   CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o \
   Debug/libSDL3.so.0.5.0
 
 
 Debug/libSDL3.so.0.5.0:
+
+CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o:
 
 CMakeFiles/rendering-pipeline.dir/src/main.cpp.o:
 
@@ -425,27 +777,7 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o:
 
 /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.cpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h:
-
-/usr/include/wchar.h:
-
 /usr/include/time.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/string.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
 
 /usr/include/pthread.h:
 
@@ -457,7 +789,89 @@ CMakeFiles/rendering-pipeline.dir/src/main.cpp.o:
 
 /usr/include/linux/sched/types.h:
 
-/usr/include/gnu/stubs.h:
+/usr/include/errno.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/16.1.1/system_error:
+
+/usr/include/c++/16.1.1/string_view:
+
+/usr/include/c++/16.1.1/string:
+
+/usr/include/c++/16.1.1/streambuf:
+
+/usr/include/c++/16.1.1/stdexcept:
+
+/usr/lib/libc_nonshared.a:
+
+/usr/include/c++/16.1.1/istream:
+
+/usr/include/c++/16.1.1/ext/atomicity.h:
+
+/usr/include/c++/16.1.1/cwctype:
+
+/usr/include/c++/16.1.1/cstdlib:
+
+/usr/include/c++/16.1.1/clocale:
+
+/usr/include/c++/16.1.1/bits/string_view.tcc:
+
+/usr/include/c++/16.1.1/bits/streambuf.tcc:
+
+/usr/include/c++/16.1.1/bits/stdexcept_except.h:
+
+/usr/include/c++/16.1.1/bits/ostream_insert.h:
+
+/usr/include/c++/16.1.1/bits/ostream.tcc:
+
+/usr/include/c++/16.1.1/ostream:
+
+/usr/include/c++/16.1.1/bits/ostream.h:
+
+/usr/include/c++/16.1.1/bits/nested_exception.h:
+
+/usr/include/c++/16.1.1/bits/localefwd.h:
+
+/usr/include/c++/16.1.1/bits/locale_facets.tcc:
+
+/usr/include/c++/16.1.1/bits/locale_facets.h:
+
+/usr/include/c++/16.1.1/bits/istream.tcc:
+
+/usr/include/c++/16.1.1/bits/cxxabi_init_exception.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_close_code.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_clipboard.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/main.cpp:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL.h:
+
+/usr/include/asm/types.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/camera.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/cdefs.h:
 
 CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o:
 
@@ -465,341 +879,89 @@ CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o:
 
 /usr/include/features-time64.h:
 
-/usr/include/errno.h:
+/usr/include/c++/16.1.1/bits/concept_check.h:
 
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+/usr/include/stdlib.h:
 
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
+/usr/include/c++/16.1.1/tr1/special_function_util.h:
 
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+/usr/include/c++/16.1.1/tr1/hypergeometric.tcc:
 
-/usr/include/bits/types/struct_sched_param.h:
+/usr/lib/crti.o:
 
-/usr/include/bits/types/sigset_t.h:
+/usr/include/c++/16.1.1/bits/stl_bvector.h:
+
+/usr/include/c++/16.1.1/tr1/gamma.tcc:
+
+/usr/include/c++/16.1.1/tr1/ell_integral.tcc:
 
 /usr/include/c++/16.1.1/bits/ranges_cmp.h:
 
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/16.1.1/bits/uses_allocator.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_dlopennote.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_hidapi.h:
-
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/16.1.1/bits/ostream.tcc:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_version.h:
-
-/usr/include/c++/16.1.1/bits/localefwd.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_clipboard.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/main.cpp:
-
-/usr/lib/libc.so:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/c++/16.1.1/vector:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/c++/16.1.1/ext/numeric_traits.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/c++/16.1.1/bits/cpp_type_traits.h:
-
-/usr/include/asm/bitsperlong.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_events.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/16.1.1/bits/new_allocator.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/16.1.1/initializer_list:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_video.h:
-
-/usr/include/bits/byteswap.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_timer.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/linux/types.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_time.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_system.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_iostream.h:
-
-/usr/include/alloca.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_mutex.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_gamepad.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_gpu.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/bits/types/error_t.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_atomic.h:
-
-/usr/include/c++/16.1.1/bits/istream.tcc:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_joystick.h:
-
-/usr/include/stdio.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/bits/setjmp.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_tray.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_dialog.h:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/cpu-set.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_cpuinfo.h:
-
-/usr/include/features.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_keyboard.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_close_code.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/asm/types.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_asyncio.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_process.h:
-
-/usr/include/c++/16.1.1/bits/utility.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_haptic.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_messagebox.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_platform.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/sys/single_threaded.h:
-
-/usr/include/c++/16.1.1/bits/stdexcept_throw.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_bits.h:
-
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
-
-/usr/include/c++/16.1.1/ext/type_traits.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/lib/libgcc_s.so.1:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_filesystem.h:
-
-/usr/include/c++/16.1.1/bits/max_size_type.h:
-
-/usr/include/bits/stdint-least.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_audio.h:
-
-/usr/include/c++/16.1.1/bits/locale_classes.h:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/c++/16.1.1/streambuf:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_locale.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/camera.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_log.h:
-
-/usr/include/c++/16.1.1/bits/exception_ptr.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_scancode.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_touch.h:
+/usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/floatn.h:
 
-/usr/include/c++/16.1.1/bits/alloc_traits.h:
+/usr/include/c++/16.1.1/tr1/riemann_zeta.tcc:
 
-/usr/include/c++/16.1.1/bits/new_except.h:
+/usr/include/c++/16.1.1/tr1/bessel_function.tcc:
 
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+/usr/include/c++/16.1.1/pstl/pstl_config.h:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_platform_defines.h:
+CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o:
 
-/usr/include/c++/16.1.1/bits/vector.tcc:
+/usr/include/c++/16.1.1/bits/basic_string.h:
 
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+/usr/include/c++/16.1.1/bits/streambuf_iterator.h:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_assert.h:
+/usr/include/c++/16.1.1/limits:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.cpp:
+/usr/include/c++/16.1.1/tr1/poly_hermite.tcc:
 
-/usr/include/bits/types/clock_t.h:
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.h:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_oldnames.h:
+/usr/include/c++/16.1.1/ext/type_traits.h:
 
-/usr/include/c++/16.1.1/bits/stl_algobase.h:
+/usr/include/c++/16.1.1/concepts:
 
-/usr/include/c++/16.1.1/iostream:
+/usr/include/bits/endianness.h:
 
-/usr/include/c++/16.1.1/bits/basic_ios.tcc:
+/usr/include/c++/16.1.1/bits/version.h:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_pen.h:
+/usr/include/c++/16.1.1/bits/stl_construct.h:
 
-/usr/include/asm/posix_types_64.h:
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/renderer.h:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_metal.h:
+/usr/include/c++/16.1.1/bits/stdexcept_throwfwd.h:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_stdinc.h:
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/renderer.cpp:
 
-/usr/include/bits/types/__locale_t.h:
+/usr/include/c++/16.1.1/debug/assertions.h:
 
-/usr/include/c++/16.1.1/bits/range_access.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_loadso.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_properties.h:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/bits/types.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_sensor.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/16.1.1/bits/uses_allocator_args.h:
-
-/usr/include/c++/16.1.1/string:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_hints.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_init.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/c++/16.1.1/bits/ostream.h:
-
-/usr/include/c++/16.1.1/ostream:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_keycode.h:
-
-/usr/include/bits/time.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_guid.h:
-
-/usr/include/asm/posix_types.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_mouse.h:
-
-/usr/include/c++/16.1.1/bits/invoke.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_pixels.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_rect.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_power.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_render.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.h:
-
-/usr/include/bits/typesizes.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_surface.h:
-
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/c++/16.1.1/bits/specfun.h:
 
 /usr/include/c++/16.1.1/bits/requires_hosted.h:
 
-/usr/lib/libatomic_asneeded.so:
+/usr/include/bits/types/struct_timespec.h:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_camera.h:
+/usr/include/c++/16.1.1/ios:
 
-/usr/include/bits/types/struct_timeval.h:
+/usr/include/c++/16.1.1/bits/ranges_util.h:
 
-/usr/include/bits/types/time_t.h:
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_blendmode.h:
+
+/usr/include/c++/16.1.1/compare:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/16.1.1/tr1/exp_integral.tcc:
+
+/usr/lib/libc.so.6:
+
+/usr/include/c++/16.1.1/cstdio:
+
+/usr/include/c++/16.1.1/bits/stl_iterator_base_types.h:
 
 /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_begin_code.h:
 
@@ -807,224 +969,472 @@ CMakeFiles/rendering-pipeline.dir/src/geometry.cpp.o:
 
 /usr/include/c++/16.1.1/bits/std_abs.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/bits/select.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/c++/16.1.1/bits/stl_pair.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_power.h:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/c++/16.1.1/ext/numeric_traits.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.cpp:
+
+/usr/include/c++/16.1.1/typeinfo:
+
+/usr/include/c++/16.1.1/tr1/poly_laguerre.tcc:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/16.1.1/cwchar:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/16.1.1/iostream:
+
+/usr/include/c++/16.1.1/bits/stl_algobase.h:
+
+/usr/include/math.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_hints.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/sys/single_threaded.h:
+
+/usr/include/c++/16.1.1/bits/stdexcept_throw.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/bits/iscanonical.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_gamepad.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_gpu.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/time64.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_hidapi.h:
+
+/usr/lib/libc.so:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/c++/16.1.1/vector:
+
+/usr/include/c++/16.1.1/exception:
+
+/usr/include/c++/16.1.1/type_traits:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec3.h:
+
+/usr/include/c++/16.1.1/bits/predefined_ops.h:
+
+/usr/include/c++/16.1.1/tr1/legendre_function.tcc:
+
+/usr/include/alloca.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_mutex.h:
 
 /usr/lib/libm.so:
 
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_thread.h:
+/usr/include/c++/16.1.1/bits/ostream_print.h:
 
 /usr/include/c++/16.1.1/bits/locale_classes.tcc:
 
-/usr/include/c++/16.1.1/bits/ostream_print.h:
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_thread.h:
 
-/usr/include/bits/wctype-wchar.h:
+/usr/include/ctype.h:
 
-/usr/lib/crti.o:
+/usr/include/c++/16.1.1/bits/new_allocator.h:
 
-/usr/include/c++/16.1.1/bits/stl_bvector.h:
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/16.1.1/bits/exception.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/16.1.1/new:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/fp-fast.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_assert.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/16.1.1/tr1/beta_function.tcc:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/16.1.1/bits/cpp_type_traits.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_audio.h:
+
+/usr/include/c++/16.1.1/bits/iterator_concepts.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_storage.h:
+
+/usr/include/c++/16.1.1/bits/locale_classes.h:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/lib/libatomic_asneeded.so:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_camera.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/16.1.1/bits/stringfwd.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/16.1.1/bits/move.h:
+
+/usr/include/c++/16.1.1/bits/cxxabi_forced.h:
 
 /usr/include/c++/16.1.1/bit:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_bits.h:
+
+/usr/include/c++/16.1.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/c++/16.1.1/debug/debug.h:
+
+/usr/include/c++/16.1.1/bits/stl_iterator.h:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/16.1.1/cmath:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_joystick.h:
+
+/usr/include/c++/16.1.1/cerrno:
+
+/usr/include/c++/16.1.1/bits/ptr_traits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o:
+
+/usr/include/c++/16.1.1/bits/memory_resource.h:
+
+/usr/include/c++/16.1.1/bits/basic_string.tcc:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/16.1.1/tr1/modified_bessel_func.tcc:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/strings.h:
+
+/usr/include/c++/16.1.1/bits/exception_defines.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_cpuinfo.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_dialog.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_events.h:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/lib/libgcc_s.so.1:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_filesystem.h:
+
+/usr/include/c++/16.1.1/bits/max_size_type.h:
+
+/usr/include/c++/16.1.1/bits/utility.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_haptic.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_init.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_iostream.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_system.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_keyboard.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_keycode.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_properties.h:
+
+/usr/include/bits/types/wint_t.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_locale.h:
+
+/usr/include/c++/16.1.1/bits/new_except.h:
+
+/usr/include/c++/16.1.1/bits/alloc_traits.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_log.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_messagebox.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_metal.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_stdinc.h:
+
+/usr/include/c++/16.1.1/bits/erase_if.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_misc.h:
+
+/usr/include/c++/16.1.1/bits/invoke.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_mouse.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_oldnames.h:
+
+/usr/include/c++/16.1.1/bits/basic_ios.tcc:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_pen.h:
+
+/usr/include/asm/posix_types_64.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_pixels.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_platform.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_platform_defines.h:
+
+/usr/include/c++/16.1.1/bits/vector.tcc:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_asyncio.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_process.h:
+
+/usr/include/bits/fp-logb.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_rect.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_render.h:
+
+/usr/include/c++/16.1.1/bits/exception_ptr.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_scancode.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/mat4.h:
+
+/usr/include/bits/types.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_sensor.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_surface.h:
+
+/usr/include/linux/types.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_time.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_timer.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_touch.h:
+
+/usr/include/bits/setjmp.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_tray.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_version.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_atomic.h:
+
+/usr/include/bits/types/error_t.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_video.h:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_loadso.h:
+
+/usr/include/c++/16.1.1/bits/range_access.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/types/mbstate_t.h:
 
 /usr/include/c++/16.1.1/backward/binders.h:
 
 /usr/include/c++/16.1.1/bits/allocator.h:
 
-CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o:
+/usr/include/c++/16.1.1/bits/functional_hash.h:
 
-/usr/include/c++/16.1.1/bits/basic_string.h:
+/usr/include/c++/16.1.1/bits/hash_bytes.h:
 
-/usr/include/c++/16.1.1/pstl/pstl_config.h:
+/usr/include/c++/16.1.1/bits/postypes.h:
 
-/usr/include/c++/16.1.1/bits/basic_string.tcc:
+/usr/include/c++/16.1.1/bits/memoryfwd.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o:
+/usr/include/c++/16.1.1/bits/stl_uninitialized.h:
 
-/usr/include/c++/16.1.1/bits/memory_resource.h:
+/usr/include/c++/16.1.1/bits/stl_vector.h:
+
+/usr/include/linux/errno.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_dlopennote.h:
+
+/usr/include/c++/16.1.1/bits/uses_allocator.h:
+
+/usr/include/c++/16.1.1/bits/ranges_base.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/c++/16.1.1/iosfwd:
+
+/usr/include/c++/16.1.1/bits/functexcept.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/c++/16.1.1/cstddef:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_endian.h:
+
+/usr/include/c++/16.1.1/ext/alloc_traits.h:
+
+/usr/include/c++/16.1.1/initializer_list:
+
+/usr/include/c++/16.1.1/bits/uses_allocator_args.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/c++/16.1.1/bits/ios_base.h:
+
+/usr/include/c++/16.1.1/numbers:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/c++/16.1.1/tuple:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h:
+
+/usr/include/c++/16.1.1/cctype:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_error.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec4.h:
+
+/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_guid.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/asm/posix_types.h:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/include/c++/16.1.1/bits/stl_function.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/16.1.1/bits/new_throw.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/16.1.1/bits/basic_ios.h:
 
 /usr/include/c++/16.1.1/bits/char_traits.h:
 
 /usr/include/c++/16.1.1/ext/string_conversions.h:
 
 /usr/include/c++/16.1.1/bits/charconv.h:
-
-/usr/include/c++/16.1.1/bits/concept_check.h:
-
-/usr/lib/libc_nonshared.a:
-
-/usr/include/c++/16.1.1/istream:
-
-/usr/include/c++/16.1.1/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/16.1.1/concepts:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_misc.h:
-
-/usr/include/c++/16.1.1/bits/erase_if.h:
-
-/usr/include/c++/16.1.1/bits/exception.h:
-
-/usr/include/strings.h:
-
-/usr/include/c++/16.1.1/bits/exception_defines.h:
-
-/usr/include/c++/16.1.1/bits/functional_hash.h:
-
-/usr/include/c++/16.1.1/bits/hash_bytes.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_storage.h:
-
-/usr/include/c++/16.1.1/bits/iterator_concepts.h:
-
-/usr/include/c++/16.1.1/bits/locale_facets.h:
-
-/usr/include/c++/16.1.1/bits/locale_facets.tcc:
-
-/usr/include/c++/16.1.1/bits/postypes.h:
-
-/usr/include/c++/16.1.1/bits/memoryfwd.h:
-
-/usr/include/c++/16.1.1/bits/cxxabi_forced.h:
-
-/usr/include/c++/16.1.1/bits/move.h:
-
-/usr/include/c++/16.1.1/bits/nested_exception.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/16.1.1/bits/basic_ios.h:
-
-/usr/include/c++/16.1.1/bits/new_throw.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/16.1.1/new:
-
-/usr/include/c++/16.1.1/bits/ostream_insert.h:
-
-/usr/include/c++/16.1.1/bits/predefined_ops.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/c++/16.1.1/bits/ranges_base.h:
-
-/usr/include/c++/16.1.1/bits/stdexcept_except.h:
-
-/usr/include/c++/16.1.1/bits/stdexcept_throwfwd.h:
-
-/usr/include/c++/16.1.1/bits/string_view.tcc:
-
-/usr/include/c++/16.1.1/bits/stl_construct.h:
-
-/usr/include/c++/16.1.1/bits/version.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/c++/16.1.1/bits/stl_function.h:
-
-/usr/include/c++/16.1.1/bits/stl_iterator.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/c++/16.1.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/16.1.1/cstdlib:
-
-/usr/include/c++/16.1.1/bits/stl_pair.h:
-
-/usr/include/c++/16.1.1/bits/stl_uninitialized.h:
-
-/usr/include/c++/16.1.1/bits/stl_vector.h:
-
-/usr/include/c++/16.1.1/bits/streambuf.tcc:
-
-/usr/include/c++/16.1.1/cstddef:
-
-/usr/include/c++/16.1.1/bits/stringfwd.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_error.h:
-
-/usr/include/c++/16.1.1/cctype:
-
-/usr/include/c++/16.1.1/bits/ptr_traits.h:
-
-/usr/include/c++/16.1.1/cerrno:
-
-/usr/include/c++/16.1.1/clocale:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_blendmode.h:
-
-/usr/include/c++/16.1.1/compare:
-
-/usr/lib/libc.so.6:
-
-/usr/include/c++/16.1.1/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/16.1.1/cstdio:
-
-/usr/include/c++/16.1.1/cwchar:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec3.h:
-
-/usr/include/c++/16.1.1/type_traits:
-
-/usr/include/c++/16.1.1/exception:
-
-/usr/include/c++/16.1.1/stdexcept:
-
-/usr/include/c++/16.1.1/cwctype:
-
-/usr/include/c++/16.1.1/debug/assertions.h:
-
-/usr/include/c++/16.1.1/debug/debug.h:
-
-/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_endian.h:
-
-/usr/include/c++/16.1.1/ext/alloc_traits.h:
-
-/usr/include/c++/16.1.1/ext/atomicity.h:
-
-/usr/include/c++/16.1.1/bits/ranges_util.h:
-
-/usr/include/c++/16.1.1/ios:
-
-/usr/include/bits/timex.h:
-
-/usr/include/c++/16.1.1/bits/functexcept.h:
-
-/usr/include/c++/16.1.1/iosfwd:
-
-/usr/include/c++/16.1.1/bits/streambuf_iterator.h:
-
-/usr/include/c++/16.1.1/limits:
-
-/usr/include/c++/16.1.1/bits/ios_base.h:
-
-/usr/include/c++/16.1.1/numbers:
-
-/usr/include/c++/16.1.1/string_view:
-
-/usr/include/c++/16.1.1/system_error:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/c++/16.1.1/tuple:
-
-/usr/include/c++/16.1.1/typeinfo:
-
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
