@@ -24,6 +24,12 @@
   "output": "CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o"
 },
 {
+  "directory": "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build",
+  "command": "/usr/bin/g++  -I/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL/include-revision -I/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include -g -o CMakeFiles/rendering-pipeline.dir/src/window.cpp.o -c /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/window.cpp",
+  "file": "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/window.cpp",
+  "output": "CMakeFiles/rendering-pipeline.dir/src/window.cpp.o"
+},
+{
   "directory": "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL",
   "command": "/usr/bin/gcc -DDEBUG -DUSING_GENERATED_CONFIG_H -I/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/build/vendored/SDL/include-config-debug/build_config -I/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src -I/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include -g -fPIC -fvisibility=hidden -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fdiagnostics-color=always -o CMakeFiles/SDL_uclibc.dir/src/libm/e_atan2.c.o -c /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/libm/e_atan2.c",
   "file": "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/src/libm/e_atan2.c",

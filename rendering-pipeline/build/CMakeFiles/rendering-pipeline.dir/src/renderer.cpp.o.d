@@ -185,5 +185,90 @@ CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o: \
  /usr/include/c++/16.1.1/tr1/riemann_zeta.tcc \
  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/geometry.h \
  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/camera.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/mat4.h \
  /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/vec4.h \
- /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/math/mat4.h
+ /usr/include/c++/16.1.1/memory \
+ /usr/include/c++/16.1.1/bits/stl_tempbuf.h \
+ /usr/include/c++/16.1.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/16.1.1/bits/align.h \
+ /usr/include/c++/16.1.1/bits/unique_ptr.h \
+ /usr/include/c++/16.1.1/bits/shared_ptr.h \
+ /usr/include/c++/16.1.1/bits/shared_ptr_base.h \
+ /usr/include/c++/16.1.1/bits/allocated_ptr.h \
+ /usr/include/c++/16.1.1/bits/refwrap.h \
+ /usr/include/c++/16.1.1/ext/aligned_buffer.h \
+ /usr/include/c++/16.1.1/ext/concurrence.h \
+ /usr/include/c++/16.1.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/16.1.1/bits/atomic_base.h \
+ /usr/include/c++/16.1.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/16.1.1/bits/atomic_wait.h \
+ /usr/include/c++/16.1.1/backward/auto_ptr.h \
+ /usr/include/c++/16.1.1/bits/ranges_uninitialized.h \
+ /usr/include/c++/16.1.1/bits/ranges_algobase.h \
+ /usr/include/c++/16.1.1/pstl/glue_memory_defs.h \
+ /usr/include/c++/16.1.1/pstl/execution_defs.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/window.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_stdinc.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_platform_defines.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_begin_code.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_close_code.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_assert.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_asyncio.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_atomic.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_audio.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_endian.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_error.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_mutex.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_thread.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_properties.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_iostream.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_bits.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_blendmode.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_camera.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_pixels.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_surface.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_rect.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_clipboard.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_cpuinfo.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_dialog.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_video.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_dlopennote.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_events.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_gamepad.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_guid.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_joystick.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_power.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_sensor.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_keyboard.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_keycode.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_scancode.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_mouse.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_pen.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_touch.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_filesystem.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_gpu.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_haptic.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_hidapi.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_hints.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_init.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_loadso.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_locale.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_log.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_messagebox.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_metal.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_misc.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_platform.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_process.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_render.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_storage.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_system.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_time.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_timer.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_tray.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_version.h \
+ /home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/vendored/SDL/include/SDL3/SDL_oldnames.h

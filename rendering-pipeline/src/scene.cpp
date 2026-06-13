@@ -1,19 +1,12 @@
 #include "scene.h"
+#include <memory>
 
 void Scene::add(Geometry::Cube cube) {
-    Vec3 vertices[8] = {
-        cube.position() + Vec3(cube.size() / 2, cube.size() / 2, cube.size() / 2),
-        cube.position() + Vec3(cube.size() / 2, cube.size() / 2, -cube.size() / 2),
-        cube.position() + Vec3(cube.size() / 2, -cube.size() / 2, cube.size() / 2),
-        cube.position() + Vec3(cube.size() / 2, -cube.size() / 2, -cube.size() / 2),
-        cube.position() + Vec3(-cube.size() / 2, cube.size() / 2, cube.size() / 2),
-        cube.position() + Vec3(-cube.size() / 2, cube.size() / 2, -cube.size() / 2),
-        cube.position() + Vec3(-cube.size() / 2, -cube.size() / 2, cube.size() / 2),
-        cube.position() + Vec3(-cube.size() / 2, -cube.size() / 2, -cube.size() / 2)
-    };
-
-    for (Vec3 v : vertices) {
+    for (Vec3 v : cube.getVertices()) {
         addVertex(v);
+    }
+    for (const auto& edge : cube.getEdges()) {
+        addEdge(edge.first, edge.second);
     }
 }
 
@@ -21,6 +14,10 @@ void Scene::add(Geometry::Sphere sphere) {
     // TODO
 }
 
-void Scene::add(Camera camera) {
-    _cameras.push_back(camera);
+void Scene::add(std::unique_ptr<Camera> camera) {
+    _cameras.push_back(std::move(camera));
+}
+
+const Camera& Scene::getCamera(int index) const {
+    return *_cameras[index];
 }

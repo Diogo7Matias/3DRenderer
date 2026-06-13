@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o.d"
   "CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o"
   "CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o.d"
+  "CMakeFiles/rendering-pipeline.dir/src/window.cpp.o"
+  "CMakeFiles/rendering-pipeline.dir/src/window.cpp.o.d"
   "Debug/rendering-pipeline"
   "Debug/rendering-pipeline.pdb"
 )

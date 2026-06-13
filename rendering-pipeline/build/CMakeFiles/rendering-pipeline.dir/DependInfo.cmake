@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/main.cpp" "CMakeFiles/rendering-pipeline.dir/src/main.cpp.o" "gcc" "CMakeFiles/rendering-pipeline.dir/src/main.cpp.o.d"
   "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/renderer.cpp" "CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/rendering-pipeline.dir/src/renderer.cpp.o.d"
   "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/scene.cpp" "CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o" "gcc" "CMakeFiles/rendering-pipeline.dir/src/scene.cpp.o.d"
+  "/home/diogo/Documents/3D-2D-Renderer/rendering-pipeline/src/window.cpp" "CMakeFiles/rendering-pipeline.dir/src/window.cpp.o" "gcc" "CMakeFiles/rendering-pipeline.dir/src/window.cpp.o.d"
   "" "Debug/rendering-pipeline" "gcc" "CMakeFiles/rendering-pipeline.dir/link.d"
   )
 
