@@ -91,12 +91,33 @@ public:
 /* .............. Perspective Camera .............. */
 
 class PerspectiveCamera : public Camera {
+    float _fov;
+    float _aspectRatio;
+    float _near, _far;
 
 public:
-    PerspectiveCamera(Vec3 position) : Camera(position) {}
+    PerspectiveCamera(Vec3 position, float fov, float aspectRatio, float near, float far) 
+        : Camera(position), _fov(fov), _aspectRatio(aspectRatio), _near(near), _far(far) {}
+    
+    PerspectiveCamera(float fov, float aspectRatio, float near, float far)
+        : Camera(), _fov(fov), _aspectRatio(aspectRatio), _near(near), _far(far) {}
+    
+    float fov() const { return _fov; }
+
+    float aspectRatio() const { return _aspectRatio; }
+
+    float near() const { return _near; }
+
+    float far() const { return _far; }
 
     Mat4 projectionMatrix() const override {
-        // TODO
-        return Mat4::identity();
+        float fov_rad = _fov * M_PI / 180;
+        float f = 1.0 / std::tan(fov_rad / 2);
+        Vec4 u1 = Vec4(f / _aspectRatio, 0, 0, 0);
+        Vec4 u2 = Vec4(0, f, 0, 0);
+        Vec4 u3 = Vec4(0, 0, (_far + _near) / (_near - _far), (2 * _far * _near) / (_near - _far));
+        Vec4 u4 = Vec4(0, 0, -1, 0);
+
+        return Mat4::fromRows(u1, u2, u3, u4);
     }
 };

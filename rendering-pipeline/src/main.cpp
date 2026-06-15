@@ -20,7 +20,7 @@ Scene scene = Scene();
 
 void createGeometry() {
     Vec3 pos = Vec3(1, 0, -4);
-    Geometry::Cube cube = Geometry::Cube(pos, 5);
+    Geometry::Cube cube = Geometry::Cube(pos, 3);
     
     scene.add(cube);
 }
@@ -31,7 +31,7 @@ void createCameras() {
     std::unique_ptr<Camera> camera1 = std::make_unique<OrthographicCamera>(pos, -10, 10, 10, -10, 0.1, 100);
     scene.add(std::move(camera1));
 
-    std::unique_ptr<Camera> camera2 = std::make_unique<OrthographicCamera>(-10, 10, 10, -10, 0.1, 100);
+    std::unique_ptr<Camera> camera2 = std::make_unique<PerspectiveCamera>(pos, 90, (float)WIDTH / (float)HEIGHT, 0.1, 100);
     scene.add(std::move(camera2));
 }
 
@@ -55,6 +55,7 @@ int main() {
 
     bool running = true;
     SDL_Event event;
+    int cameraIndex = 0;
 
     createGeometry();
     createCameras();
@@ -69,13 +70,16 @@ int main() {
                 if (event.key.key == SDLK_ESCAPE) {
                     running = false;
                 }
+                if (event.key.key == SDLK_SPACE) {
+                    cameraIndex = (cameraIndex + 1) % scene.cameraCount();
+                }
             }
         }
 
         // clear to black
         memset(framebuffer, 0, sizeof(framebuffer));
 
-        renderer.render(scene, scene.getCamera(0));
+        renderer.render(scene, scene.getCamera(cameraIndex));
         Fragment* fragments = renderer.fragmentBuffer();
 
         // only write fragments that have been set (non-black color)

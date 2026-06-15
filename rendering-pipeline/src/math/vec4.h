@@ -28,7 +28,7 @@ struct Vec4 {
 };
 
 inline Vec3 Vec4::toVec3() const {
-    return Vec3(x, y, z);
+    return Vec3(x/w, y/w, z/w);
 }
 
 inline Vec4 Vec3::toVec4(float w) const {

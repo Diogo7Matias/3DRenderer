@@ -100,6 +100,18 @@ public:
         return result;
     }
 
+    /**
+     * Returns a matrix from four row vectors.
+     */
+    static Mat4 fromRows(const Vec4 &u, const Vec4 &v, const Vec4 &w, const Vec4 &x) {
+        Mat4 result = Mat4::zero();
+        result.m[0][0] = u.x; result.m[0][1] = u.y; result.m[0][2] = u.z; result.m[0][3] = u.w;
+        result.m[1][0] = v.x; result.m[1][1] = v.y; result.m[1][2] = v.z; result.m[1][3] = v.w;
+        result.m[2][0] = w.x; result.m[2][1] = w.y; result.m[2][2] = w.z; result.m[2][3] = w.w;
+        result.m[3][0] = x.x; result.m[3][1] = x.y; result.m[3][2] = x.z; result.m[3][3] = x.w;
+        return result;
+    }
+
     ///
     ////// * Operator Overloads
     ///

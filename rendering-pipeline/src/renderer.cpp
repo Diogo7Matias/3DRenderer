@@ -7,6 +7,9 @@
 
 void Renderer::render(const Scene &scene, const Camera &camera) {
     std::vector<Vec3> vertices = scene.vertices();
+    
+    // clear fragment buffer
+    memset(_fragmentBuffer, 0, _window->getWidth() * _window->getHeight() * sizeof(Fragment));
 
     // debug
     for (Vec3 v : vertices) {
