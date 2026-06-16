@@ -19,10 +19,12 @@ const int HEIGHT = 600;
 Scene scene = Scene();
 
 void createGeometry() {
-    Vec3 pos = Vec3(1, 0, -4);
+    Vec3 pos = Vec3(1, 0, -1);
     Geometry::Cube cube = Geometry::Cube(pos, 3);
+
+    Geometry::Sphere sphere = Geometry::Sphere(pos, 1);
     
-    scene.add(cube);
+    scene.add(sphere);
 }
 
 void createCameras() {

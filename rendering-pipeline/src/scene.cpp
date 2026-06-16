@@ -1,17 +1,13 @@
 #include "scene.h"
 #include <memory>
 
-void Scene::add(Geometry::Cube cube) {
-    for (Vec3 v : cube.getVertices()) {
+void Scene::add(Geometry::Primitive primitive) {
+    for (Vec3 v : primitive.getVertices()) {
         addVertex(v);
     }
-    for (const auto& edge : cube.getEdges()) {
+    for (const auto& edge : primitive.getEdges()) {
         addEdge(edge.first, edge.second);
     }
-}
-
-void Scene::add(Geometry::Sphere sphere) {
-    // TODO
 }
 
 void Scene::add(std::unique_ptr<Camera> camera) {

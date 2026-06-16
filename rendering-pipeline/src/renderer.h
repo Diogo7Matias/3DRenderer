@@ -27,5 +27,6 @@ public:
     Fragment* fragmentBuffer() const { return _fragmentBuffer; }
 
 private:
+    void clipping(Vec3 &v);
     void line(int x0, int y0, int x1, int y1);
 };

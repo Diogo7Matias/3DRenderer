@@ -20,8 +20,7 @@ public:
     std::vector<Vec3> vertices() const { return _vertices; }
     std::vector<std::pair<int,int>> edges() const { return _edges; }
 
-    void add(Geometry::Cube cube);
-    void add(Geometry::Sphere sphere);
+    void add(Geometry::Primitive primitive);
     void add(std::unique_ptr<Camera> camera);
     
     const Camera& getCamera(int index) const;

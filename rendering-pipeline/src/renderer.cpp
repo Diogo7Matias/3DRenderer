@@ -24,7 +24,11 @@ void Renderer::render(const Scene &scene, const Camera &camera) {
         Mat4 view = camera.viewMatrix();
         Mat4 projection = camera.projectionMatrix();
         Mat4 viewport = _window->viewportMatrix();
-        v = (viewport * projection *  view * vHomogeneous).toVec3();
+        Vec3 vProjected = (projection * view * vHomogeneous).toVec3();
+        std::cout << "Projected: " << vProjected.x << ", " << vProjected.y << ", " << vProjected.z << ", " << std::endl;
+        clipping(vProjected);
+        
+        v = (viewport * vProjected.toVec4()).toVec3();
         std::cout << "Viewport: " << v.x << ", " << v.y << ", " << v.z << std::endl;
     }
 
@@ -47,6 +51,38 @@ void Renderer::render(const Scene &scene, const Camera &camera) {
         int y1 = (int)vertices[edge.second].y;
         line(x0, y0, x1, y1);
     }
+}
+
+// Cohen-Sutherland clipping algorithm
+void Renderer::clipping(Vec3 &v) {
+    // Define the clipping boundaries
+    const float xMin = -1.0f, xMax = 1.0f;
+    const float yMin = -1.0f, yMax = 1.0f;
+    const float zMin = -1.0f, zMax = 1.0f;
+
+    // Compute the outcode for the point
+    int outcode = 0;
+    if (v.x < xMin) outcode |= 1; // left
+    else if (v.x > xMax) outcode |= 2; // right
+
+    if (v.y < yMin) outcode |= 4; // bottom
+    else if (v.y > yMax) outcode |= 8; // top
+    
+    if (v.z < zMin) outcode |= 16; // near
+    else if (v.z > zMax) outcode |= 32; // far
+
+    // If the point is outside the clipping volume, set it to the nearest boundary
+    if (outcode != 0) {
+        if (outcode & 1) v.x = xMin; // left
+        else if (outcode & 2) v.x = xMax; // right
+
+        if (outcode & 4) v.y = yMin; // bottom
+        else if (outcode & 8) v.y = yMax; // top
+
+        if (outcode & 16) v.z = zMin; // near
+        else if (outcode & 32) v.z = zMax; // far
+    }
+    std::cout << "Clipped: " << v.x << ", " << v.y << ", " << v.z << std::endl;
 }
 
 // this function implements the Bresenham's line drawing algorithm
