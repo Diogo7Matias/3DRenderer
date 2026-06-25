@@ -3,6 +3,8 @@
 #include "math/vec3.h"
 #include "geometry.h"
 #include "camera.h"
+#include "mesh.h"
+#include "light.h"
 
 #include <vector>
 #include <memory>
@@ -11,7 +13,7 @@ class Scene {
     std::vector<Vec3> _vertices;
     std::vector<std::pair<int,int>> _edges;
     
-    // std::vector<Light> _lights;
+    std::vector<std::unique_ptr<Light>> _lights;
     std::vector<std::unique_ptr<Camera>> _cameras;
 
 public:
@@ -20,8 +22,11 @@ public:
     std::vector<Vec3> vertices() const { return _vertices; }
     std::vector<std::pair<int,int>> edges() const { return _edges; }
 
-    void add(Geometry::Primitive primitive);
+    void add(Mesh mesh);
     void add(std::unique_ptr<Camera> camera);
+    void add(std::unique_ptr<Light> light);
+
+    std::vector<Light*> getLights() const;
     
     Camera& getCamera(int index) const;
     int cameraCount() const { return _cameras.size(); }

@@ -1,13 +1,16 @@
 #include <SDL3/SDL.h>
 #include <memory>
+#include <iostream>
 
 #include "math/vec3.h"
 #include "window.h"
 #include "renderer.h"
 #include "scene.h"
 #include "geometry.h"
+#include "material.h"
+#include "mesh.h"
+#include "color.h"
 #include "camera.h"
-#include <iostream>
 
 /////////////////////////////////////////////////////////////////////////
 //                           Aplication Logic                          //
@@ -18,13 +21,15 @@ const int HEIGHT = 600;
 
 Scene scene = Scene();
 
-void createGeometry() {
+void createObjects() {
     Vec3 pos = Vec3(1, 0, -2);
-    Geometry::Cube cube = Geometry::Cube(pos, 3);
 
+    Geometry::Cube cube = Geometry::Cube(pos, 3);
     Geometry::Sphere sphere = Geometry::Sphere(pos, 1);
-    
-    scene.add(sphere);
+    Material mat = DiffuseMaterial(0xFFFFFFFF, 1);
+
+    Mesh mesh = Mesh(sphere, mat);
+    scene.add(mesh);
 }
 
 void createCameras() {
@@ -38,7 +43,10 @@ void createCameras() {
 }
 
 void createLights() {
-    // TODO
+    Vec3 pos = Vec3(2, 2, 2);
+
+    std::unique_ptr<Light> light1 = std::make_unique<AmbientLight>(Color(0xf300ff));
+    scene.add(std::move(light1));
 }
 
 int main() {
@@ -59,7 +67,7 @@ int main() {
     SDL_Event event;
     int cameraIndex = 0;
 
-    createGeometry();
+    createObjects();
     createCameras();
     createLights();
 
@@ -91,7 +99,7 @@ int main() {
         // only write fragments that have been set (non-black color)
         for (size_t i = 0; i < WIDTH * HEIGHT; ++i) {
             if (fragments[i].color.x > 0 || fragments[i].color.y > 0 || fragments[i].color.z > 0) {
-                framebuffer[i] = 0xFFFFFFFF; // white pixel
+                framebuffer[i] = Color::fromVec3(fragments[i].color).value();
             }
         }
 

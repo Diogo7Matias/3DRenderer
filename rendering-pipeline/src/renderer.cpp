@@ -4,9 +4,11 @@
 #include "renderer.h"
 #include "math/vec4.h"
 #include "math/mat4.h"
+#include "color.h"
 
 void Renderer::render(const Scene &scene, const Camera &camera) {
     std::vector<Vec3> vertices = scene.vertices();
+    std::vector<Light*> lights = scene.getLights();
     
     // clear fragment buffer
     memset(_fragmentBuffer, 0, _window->getWidth() * _window->getHeight() * sizeof(Fragment));
@@ -16,22 +18,21 @@ void Renderer::render(const Scene &scene, const Camera &camera) {
         Mat4 view = camera.viewMatrix();
         Mat4 projection = camera.projectionMatrix();
         Mat4 viewport = _window->viewportMatrix();
-        Vec3 vProjected = (projection * view * vHomogeneous).toVec3();
-        clipping(vProjected);
-        
-        v = (viewport * vProjected.toVec4()).toVec3();
-    }
 
-    // Write transformed vertices to fragment buffer
-    for (Vec3 v : vertices) {
-        int x = (int)v.x;
-        int y = (int)v.y;
-        
-        if (x >= 0 && x < _window->getWidth() && y >= 0 && y < _window->getHeight()) {
-            int index = y * _window->getWidth() + x;
-            _fragmentBuffer[index].position = v;
-            _fragmentBuffer[index].color = Vec3(1, 1, 1); // white
+        Vec3 vViewCoords = (view * vHomogeneous).toVec3();
+
+        Color color;
+        for (Light* light : lights) {
+            color += light->compute(vViewCoords);
         }
+
+        Vec3 vProjected = (projection * vViewCoords.toVec4()).toVec3();
+
+        clipping(vProjected);
+
+        v = (viewport * vProjected.toVec4()).toVec3();
+
+        setFragmentColor(v, color);
     }
     
     for (const auto& edge : scene.edges()) {
@@ -40,6 +41,18 @@ void Renderer::render(const Scene &scene, const Camera &camera) {
         int x1 = (int)vertices[edge.second].x;
         int y1 = (int)vertices[edge.second].y;
         line(x0, y0, x1, y1);
+    }
+}
+
+// Writes vertex to fragment buffer
+void Renderer::setFragmentColor(Vec3 &v, Color &color) {
+    int x = (int)v.x;
+    int y = (int)v.y;
+    
+    if (x >= 0 && x < _window->getWidth() && y >= 0 && y < _window->getHeight()) {
+        int index = y * _window->getWidth() + x;
+        _fragmentBuffer[index].position = v;
+        _fragmentBuffer[index].color = color.asVec3();
     }
 }
 

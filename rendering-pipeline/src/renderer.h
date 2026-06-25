@@ -3,6 +3,7 @@
 #include "scene.h"
 #include "camera.h"
 #include "window.h"
+#include "color.h"
 
 struct Fragment {
     Vec3 position;
@@ -17,7 +18,7 @@ public:
     Renderer(Window* window) : _window(window) {
         _fragmentBuffer = new Fragment[_window->getWidth() * _window->getHeight()];
         for (size_t i = 0; i < _window->getWidth() * _window->getHeight(); ++i) {
-            _fragmentBuffer[i].color = Vec3(0, 0, 0); // black pixel
+            _fragmentBuffer[i].color = Color(0x000000).asVec3(); // black pixel
         }
     }
 
@@ -27,6 +28,7 @@ public:
     Fragment* fragmentBuffer() const { return _fragmentBuffer; }
 
 private:
+    void setFragmentColor(Vec3 &v, Color &color);
     void clipping(Vec3 &v);
     void line(int x0, int y0, int x1, int y1);
 };
