@@ -18,9 +18,15 @@ It's divided into three main layers:
 
 - Rasterization - Converts processed data into pixels and draws the final scene onto the screen. Makes use of SDL3 to assist in the final steps.
 
-### To run
+### Build and run
 
-Inside `/build`
+Navigate to `/rendering-pipeline`
+```s
+cmake -S . -B build
+cmake --build build
+```
+
+Then, inside `/build`
 ```s
 make
 ./rendering-pipeline

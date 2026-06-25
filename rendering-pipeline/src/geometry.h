@@ -71,6 +71,7 @@ namespace Geometry {
             std::vector<Vec3> vertices;
             std::vector<std::pair<int,int>> edges;
 
+            // Vertices
             for (size_t i = 0; i <= _segments; ++i) {
                 float phi = (float)i / (float)_segments * M_PI;
                 for (size_t j = 0; j <= _segments; ++j) {
@@ -81,10 +82,18 @@ namespace Geometry {
                         _center.z + _radius * std::sin(phi) * std::sin(theta)
                     );
                     vertices.push_back(vertex);
-                    // TODO: cool effect but edges are not correct. Will fix later
-                    if (vertices.size() > 1 && j != 0) {
-                        edges.push_back({vertices.size() - 2, vertices.size() - 1});
-                    }
+                }
+            }
+            
+            // Edges
+            for (size_t i = 0; i < _segments; ++i) {
+                for (size_t j = 0; j < _segments; ++j) {
+                    int current = i * (_segments + 1) + j;
+                    int next_col = i * (_segments + 1) + j + 1;
+                    int next_row = (i + 1) * (_segments + 1) + j;
+
+                    edges.push_back({current, next_col});
+                    edges.push_back({current, next_row});
                 }
             }
 

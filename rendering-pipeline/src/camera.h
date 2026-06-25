@@ -2,12 +2,14 @@
 
 #include "math/vec3.h"
 #include "math/mat4.h"
+#include <algorithm>
 
 class Camera {
     // in World Coordinates
     Vec3 _position;
     Vec3 _direction;    // normalized
     Vec3 _up;           // normalized
+    float _zoom = 1.0;
 
 public:
     Camera(Vec3 position) : _position(position) {
@@ -28,6 +30,13 @@ public:
     const Vec3 &direction() const { return _direction; }
 
     const Vec3 &up() const { return _up; }
+
+    float getZoom() const { return _zoom; }
+
+    void zoom(float factor)  {
+        _zoom *= factor;
+        _zoom = std::clamp(_zoom, 0.5f, 10.0f);
+    }
 
     void setPosition(Vec3 position) {
         _position = position;
@@ -81,8 +90,11 @@ public:
     float bottom() const { return _bottom; }
 
     Mat4 projectionMatrix() const override {
+        float left = _left / getZoom();
+        float top = _top / getZoom();
+
         Mat4 translation = Mat4::translation(Vec3(0, 0, -near()));
-        Mat4 scale = Mat4::scale(Vec3(1 / left(), 1 / top(), 1 / (far() - near())));
+        Mat4 scale = Mat4::scale(Vec3(1 / left, 1 / top, 1 / (far() - near())));
         return scale * translation;
     }
 
@@ -111,7 +123,7 @@ public:
     float far() const { return _far; }
 
     Mat4 projectionMatrix() const override {
-        float fov_rad = _fov * M_PI / 180;
+        float fov_rad = (_fov / getZoom()) * M_PI / 180;
         float f = 1.0 / std::tan(fov_rad / 2);
         Vec4 u1 = Vec4(f / _aspectRatio, 0, 0, 0);
         Vec4 u2 = Vec4(0, f, 0, 0);

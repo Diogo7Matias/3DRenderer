@@ -19,7 +19,7 @@ const int HEIGHT = 600;
 Scene scene = Scene();
 
 void createGeometry() {
-    Vec3 pos = Vec3(1, 0, -1);
+    Vec3 pos = Vec3(1, 0, -2);
     Geometry::Cube cube = Geometry::Cube(pos, 3);
 
     Geometry::Sphere sphere = Geometry::Sphere(pos, 1);
@@ -30,10 +30,10 @@ void createGeometry() {
 void createCameras() {
     Vec3 pos = Vec3(1, 0, 0);
 
-    std::unique_ptr<Camera> camera1 = std::make_unique<OrthographicCamera>(pos, -10, 10, 10, -10, 0.1, 100);
+    std::unique_ptr<Camera> camera1 = std::make_unique<PerspectiveCamera>(pos, 90, (float)WIDTH / (float)HEIGHT, 0.1, 100);
     scene.add(std::move(camera1));
 
-    std::unique_ptr<Camera> camera2 = std::make_unique<PerspectiveCamera>(pos, 90, (float)WIDTH / (float)HEIGHT, 0.1, 100);
+    std::unique_ptr<Camera> camera2 = std::make_unique<OrthographicCamera>(pos, -10, 10, 10, -10, 0.1, 100);
     scene.add(std::move(camera2));
 }
 
@@ -75,6 +75,10 @@ int main() {
                 if (event.key.key == SDLK_SPACE) {
                     cameraIndex = (cameraIndex + 1) % scene.cameraCount();
                 }
+            }
+            if (event.type == SDL_EVENT_MOUSE_WHEEL) {
+                float factor = (event.wheel.y < 0) ? 0.9 : 1.1;
+                scene.getCamera(cameraIndex).zoom(factor);
             }
         }
 

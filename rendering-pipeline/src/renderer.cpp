@@ -11,25 +11,15 @@ void Renderer::render(const Scene &scene, const Camera &camera) {
     // clear fragment buffer
     memset(_fragmentBuffer, 0, _window->getWidth() * _window->getHeight() * sizeof(Fragment));
 
-    // debug
-    for (Vec3 v : vertices) {
-        std::cout << "Vertex: " << v.x << ", " << v.y << ", " << v.z << std::endl;
-    }
-
-    // debug
-    std::cout << "Camera Position: " << camera.position().x << ", " << camera.position().y << ", " << camera.position().z << std::endl;
-
     for (Vec3 &v : vertices) {
         Vec4 vHomogeneous = v.toVec4();
         Mat4 view = camera.viewMatrix();
         Mat4 projection = camera.projectionMatrix();
         Mat4 viewport = _window->viewportMatrix();
         Vec3 vProjected = (projection * view * vHomogeneous).toVec3();
-        std::cout << "Projected: " << vProjected.x << ", " << vProjected.y << ", " << vProjected.z << ", " << std::endl;
         clipping(vProjected);
         
         v = (viewport * vProjected.toVec4()).toVec3();
-        std::cout << "Viewport: " << v.x << ", " << v.y << ", " << v.z << std::endl;
     }
 
     // Write transformed vertices to fragment buffer
@@ -82,7 +72,6 @@ void Renderer::clipping(Vec3 &v) {
         if (outcode & 16) v.z = zMin; // near
         else if (outcode & 32) v.z = zMax; // far
     }
-    std::cout << "Clipped: " << v.x << ", " << v.y << ", " << v.z << std::endl;
 }
 
 // this function implements the Bresenham's line drawing algorithm

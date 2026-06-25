@@ -23,7 +23,7 @@ public:
     void add(Geometry::Primitive primitive);
     void add(std::unique_ptr<Camera> camera);
     
-    const Camera& getCamera(int index) const;
+    Camera& getCamera(int index) const;
     int cameraCount() const { return _cameras.size(); }
 
 private:

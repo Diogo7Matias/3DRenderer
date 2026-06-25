@@ -14,6 +14,6 @@ void Scene::add(std::unique_ptr<Camera> camera) {
     _cameras.push_back(std::move(camera));
 }
 
-const Camera& Scene::getCamera(int index) const {
+Camera& Scene::getCamera(int index) const {
     return *_cameras[index];
 }
