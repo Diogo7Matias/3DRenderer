@@ -7,40 +7,46 @@
 #include "color.h"
 
 void Renderer::render(const Scene &scene, const Camera &camera) {
-    std::vector<Vec3> vertices = scene.vertices();
+    std::vector<Vertex> vertices = scene.vertices();
+    std::vector<Material> materials = scene.materials();
     std::vector<Light*> lights = scene.getLights();
     
     // clear fragment buffer
     memset(_fragmentBuffer, 0, _window->getWidth() * _window->getHeight() * sizeof(Fragment));
 
-    for (Vec3 &v : vertices) {
-        Vec4 vHomogeneous = v.toVec4();
+    for (Vertex &v : vertices) {
+        Vec3 &pos = v.position;
+        Vec4 vHomogeneous = pos.toVec4();
         Mat4 view = camera.viewMatrix();
         Mat4 projection = camera.projectionMatrix();
         Mat4 viewport = _window->viewportMatrix();
 
-        Vec3 vViewCoords = (view * vHomogeneous).toVec3();
+        pos = (view * vHomogeneous).toVec3();
 
-        Color color;
+        // transform normal
+        // Vec4 n = view.inverseTranspose() * Vec4(v.normal.x, v.normal.y, v.normal.z, 0.0f);
+        // v.normal = Vec3(n.x, n.y, n.z).normalize();
+
+        Color color = Color(0x000000);
         for (Light* light : lights) {
-            color += light->compute(vViewCoords);
+            color = color + light->compute(pos, v.normal, materials[v.materialIndex], camera.position());
         }
 
-        Vec3 vProjected = (projection * vViewCoords.toVec4()).toVec3();
+        pos = (projection * pos.toVec4()).toVec3();
 
-        clipping(vProjected);
+        clipping(pos);
+        
+        pos = (viewport * pos.toVec4()).toVec3();
 
-        v = (viewport * vProjected.toVec4()).toVec3();
-
-        setFragmentColor(v, color);
+        setFragmentColor(pos, color);
     }
     
     for (const auto& edge : scene.edges()) {
-        int x0 = (int)vertices[edge.first].x;
-        int y0 = (int)vertices[edge.first].y;
-        int x1 = (int)vertices[edge.second].x;
-        int y1 = (int)vertices[edge.second].y;
-        line(x0, y0, x1, y1);
+        int x0 = (int)vertices[edge.first].position.x;
+        int y0 = (int)vertices[edge.first].position.y;
+        int x1 = (int)vertices[edge.second].position.x;
+        int y1 = (int)vertices[edge.second].position.y;
+        // line(x0, y0, x1, y1);
     }
 }
 

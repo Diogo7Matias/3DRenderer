@@ -1,6 +1,7 @@
 #pragma once
 
 #include "color.h"
+#include "material.h"
 
 class Light {
     
@@ -22,7 +23,7 @@ public:
 
     virtual ~Light() = default;
 
-    virtual Color compute(Vec3 &v) const = 0;
+    virtual Color compute(const Vec3 &vPos, const Vec3 &normal, const Material &material, const Vec3 &cameraPos) const = 0;
 };
 
 // --------------------------------------------------------------------------
@@ -34,21 +35,29 @@ public:
     AmbientLight(Color color) : Light(color) {}
     AmbientLight() : Light() {}
 
-    Color compute(Vec3 &v) const override {
-        return _color;
+    Color compute(const Vec3 &vPos, const Vec3 &normal, const Material &material, const Vec3 &cameraPos) const override {
+        return _color * _intensity * material.ambientK();
     }
 };
 
 // --------------------------------------------------------------------------
 
 class PointLight : public Light {
+    Vec3 _position;
 
 public:
-    PointLight(Color color, float intensity) : Light(color, intensity) {}
-    PointLight(Color color) : Light(color) {}
-    PointLight() : Light() {}
+    PointLight(Vec3 position, Color color, float intensity) : Light(color, intensity), _position(position) {}
+    PointLight(Vec3 position, Color color) : Light(color), _position(position) {}
+    PointLight(Vec3 position) : Light(), _position(position) {}
 
-    Color compute(Vec3 &v) const override {
-        return _color;
+    Color compute(const Vec3 &v, const Vec3 &normal, const Material &material, const Vec3 &cameraPos) const override {
+        Vec3 L = (_position - v).normalize();
+        Vec3 V = (cameraPos - v).normalize();
+        Vec3 H = (L + V).normalize();
+
+        float diffuse = std::max(0.0f, normal.dot(L));
+        float specular = std::pow(std::max(0.0f, normal.dot(H)), material.shininess());
+
+        return _color * _intensity * (material.diffusionK() * diffuse + material.specularK() * specular);
     }
 };

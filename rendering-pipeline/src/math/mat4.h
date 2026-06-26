@@ -112,6 +112,22 @@ public:
         return result;
     }
 
+    Mat4 transpose() const {
+        Mat4 result = Mat4::zero();
+        for (int row = 0; row < 4; ++row)
+            for (int col = 0; col < 4; ++col)
+                result.m[row][col] = m[col][row];
+        return result;
+    }
+
+    Mat4 inverse() const {
+        // TODO
+    }
+
+    Mat4 inverseTranspose() const {
+        return inverse().transpose();
+    }
+
     ///
     ////// * Operator Overloads
     ///

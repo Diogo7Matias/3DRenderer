@@ -23,10 +23,11 @@ Scene scene = Scene();
 
 void createObjects() {
     Vec3 pos = Vec3(1, 0, -2);
+    Color color = Color(0xFFFFFFFF);
 
-    Geometry::Cube cube = Geometry::Cube(pos, 3);
-    Geometry::Sphere sphere = Geometry::Sphere(pos, 1);
-    Material mat = DiffuseMaterial(0xFFFFFFFF, 1);
+    Geometry::Cube cube = Geometry::Cube(pos, 1);
+    Geometry::Sphere sphere = Geometry::Sphere(pos, 1, 32);
+    Material mat = DiffuseMaterial(color, 0.40, 1);
 
     Mesh mesh = Mesh(sphere, mat);
     scene.add(mesh);
@@ -45,8 +46,11 @@ void createCameras() {
 void createLights() {
     Vec3 pos = Vec3(2, 2, 2);
 
-    std::unique_ptr<Light> light1 = std::make_unique<AmbientLight>(Color(0xf300ff));
+    std::unique_ptr<Light> light1 = std::make_unique<AmbientLight>(Color(0xffffff));
     scene.add(std::move(light1));
+
+    std::unique_ptr<Light> light2 = std::make_unique<PointLight>(pos, Color(0xff0000));
+    scene.add(std::move(light2));
 }
 
 int main() {

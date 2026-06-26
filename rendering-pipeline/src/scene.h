@@ -10,8 +10,10 @@
 #include <memory>
 
 class Scene {
-    std::vector<Vec3> _vertices;
+    std::vector<Vertex> _vertices;
     std::vector<std::pair<int,int>> _edges;
+
+    std::vector<Material> _materials;
     
     std::vector<std::unique_ptr<Light>> _lights;
     std::vector<std::unique_ptr<Camera>> _cameras;
@@ -19,8 +21,9 @@ class Scene {
 public:
     Scene() {}
     
-    std::vector<Vec3> vertices() const { return _vertices; }
+    std::vector<Vertex> vertices() const { return _vertices; }
     std::vector<std::pair<int,int>> edges() const { return _edges; }
+    std::vector<Material> materials() const { return _materials; }
 
     void add(Mesh mesh);
     void add(std::unique_ptr<Camera> camera);
@@ -32,8 +35,12 @@ public:
     int cameraCount() const { return _cameras.size(); }
 
 private:
-    void addVertex(Vec3 vertex) {
+    void addVertex(Vertex vertex) {
         _vertices.push_back(vertex);
+    }
+
+    void addMaterial(Material material) {
+        _materials.push_back(material);
     }
 
     void addEdge(int index1, int index2) {

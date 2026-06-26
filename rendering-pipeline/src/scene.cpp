@@ -2,9 +2,14 @@
 #include <memory>
 
 void Scene::add(Mesh mesh) {
-    for (Vec3 v : mesh.geometry().getVertices()) {
+    int materialIndex = _materials.size();
+    addMaterial(mesh.material());
+
+    for (Vertex v : mesh.geometry().getVertices()) {
+        v.materialIndex = materialIndex;
         addVertex(v);
     }
+
     for (const auto& edge : mesh.geometry().getEdges()) {
         addEdge(edge.first, edge.second);
     }

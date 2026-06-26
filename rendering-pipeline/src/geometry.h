@@ -1,6 +1,7 @@
 #pragma once
 
 #include "math/vec3.h"
+#include "vertex.h"
 #include <vector>
 
 namespace Geometry {
@@ -9,16 +10,16 @@ namespace Geometry {
     ////// Base class for primitives
     //
     class Primitive {
-        std::vector<Vec3> vertices;
-        std::vector<std::pair<int,int>> edges;
+        std::vector<Vertex> _vertices;
+        std::vector<std::pair<int,int>> _edges;
 
     public:
         virtual ~Primitive() = default;
     
-        const std::vector<Vec3> &getVertices() const { return vertices; }
-        void setVertices(const std::vector<Vec3> &verts) { vertices = verts; }
-        const std::vector<std::pair<int,int>> &getEdges() const { return edges; }
-        void setEdges(const std::vector<std::pair<int,int>> &edgs) { edges = edgs; }
+        const std::vector<Vertex> &getVertices() const { return _vertices; }
+        void setVertices(const std::vector<Vertex> &verts) { _vertices = verts; }
+        const std::vector<std::pair<int,int>> &getEdges() const { return _edges; }
+        void setEdges(const std::vector<std::pair<int,int>> &edges) { _edges = edges; }
     };
 
     // --------------------------------------------------------------------------
@@ -29,26 +30,58 @@ namespace Geometry {
 
     public:
         Cube(const Vec3 &position, float size) : _position(position), _size(size) {
-            std::vector<Vec3> vertices = {
-                _position + Vec3(_size / 2, _size / 2, _size / 2),
-                _position + Vec3(_size / 2, _size / 2, -_size / 2),
-                _position + Vec3(_size / 2, -_size / 2, _size / 2),
-                _position + Vec3(_size / 2, -_size / 2, -_size / 2),
-                _position + Vec3(-_size / 2, _size / 2, _size / 2),
-                _position + Vec3(-_size / 2, _size / 2, -_size / 2),
-                _position + Vec3(-_size / 2, -_size / 2, _size / 2),
-                _position + Vec3(-_size / 2, -_size / 2, -_size / 2)
-            };
+            std::vector<Vertex> vertices;
+            std::vector<std::pair<int,int>> edges;
+            float h = size / 2.0f;
 
-            std::vector<std::pair<int,int>> edges = {
-                {0, 1}, {0, 2}, {0, 4},
-                {1, 3}, {1, 5},
-                {2, 3}, {2, 6},
-                {3, 7},
-                {4, 5}, {4, 6},
-                {5, 7},
-                {6, 7}
-            };
+            // +X face
+            buildFace(
+                position + Vec3( h, -h, -h),
+                position + Vec3( h,  h, -h),
+                position + Vec3( h,  h,  h),
+                position + Vec3( h, -h,  h),
+                Vec3(1, 0, 0), vertices, edges
+            );
+            // -X face
+            buildFace(
+                position + Vec3(-h, -h,  h),
+                position + Vec3(-h,  h,  h),
+                position + Vec3(-h,  h, -h),
+                position + Vec3(-h, -h, -h),
+                Vec3(-1, 0, 0), vertices, edges
+            );
+            // +Y face
+            buildFace(
+                position + Vec3(-h,  h, -h),
+                position + Vec3(-h,  h,  h),
+                position + Vec3( h,  h,  h),
+                position + Vec3( h,  h, -h),
+                Vec3(0, 1, 0), vertices, edges
+            );
+            // -Y face
+            buildFace(
+                position + Vec3(-h, -h,  h),
+                position + Vec3(-h, -h, -h),
+                position + Vec3( h, -h, -h),
+                position + Vec3( h, -h,  h),
+                Vec3(0, -1, 0), vertices, edges
+            );
+            // +Z face
+            buildFace(
+                position + Vec3(-h, -h,  h),
+                position + Vec3( h, -h,  h),
+                position + Vec3( h,  h,  h),
+                position + Vec3(-h,  h,  h),
+                Vec3(0, 0, 1), vertices, edges
+            );
+            // -Z face
+            buildFace(
+                position + Vec3( h, -h, -h),
+                position + Vec3(-h, -h, -h),
+                position + Vec3(-h,  h, -h),
+                position + Vec3( h,  h, -h),
+                Vec3(0, 0, -1), vertices, edges
+            );
 
             setVertices(vertices);
             setEdges(edges);
@@ -57,6 +90,22 @@ namespace Geometry {
         const Vec3 &position() const { return _position; }
 
         float size() const { return _size; }
+
+    private:
+        void buildFace(Vec3 a, Vec3 b, Vec3 c, Vec3 d, Vec3 normal,
+                    std::vector<Vertex>& vertices,
+                    std::vector<std::pair<int,int>>& edges) {
+            int base = vertices.size();
+            vertices.push_back(Vertex(a, normal));
+            vertices.push_back(Vertex(b, normal));
+            vertices.push_back(Vertex(c, normal));
+            vertices.push_back(Vertex(d, normal));
+
+            edges.push_back({base + 0, base + 1});
+            edges.push_back({base + 1, base + 2});
+            edges.push_back({base + 2, base + 3});
+            edges.push_back({base + 3, base + 0});
+        }
     };
 
     // --------------------------------------------------------------------------
@@ -68,7 +117,7 @@ namespace Geometry {
 
     public:
         Sphere(const Vec3 &center, float radius, size_t segments) : _center(center), _radius(radius), _segments(segments) {
-            std::vector<Vec3> vertices;
+            std::vector<Vertex> vertices;
             std::vector<std::pair<int,int>> edges;
 
             // Vertices
@@ -76,12 +125,13 @@ namespace Geometry {
                 float phi = (float)i / (float)_segments * M_PI;
                 for (size_t j = 0; j <= _segments; ++j) {
                     float theta = (float)j / (float)_segments * 2 * M_PI;
-                    Vec3 vertex = Vec3(
+                    Vec3 position = Vec3(
                         _center.x + _radius * std::sin(phi) * std::cos(theta),
                         _center.y + _radius * std::cos(phi),
                         _center.z + _radius * std::sin(phi) * std::sin(theta)
                     );
-                    vertices.push_back(vertex);
+                    Vec3 normal = (position - center).normalize();
+                    vertices.push_back(Vertex(position, normal));
                 }
             }
             
