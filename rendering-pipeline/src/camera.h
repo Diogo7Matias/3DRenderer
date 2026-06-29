@@ -92,9 +92,19 @@ public:
     Mat4 projectionMatrix() const override {
         float left = _left / getZoom();
         float top = _top / getZoom();
+        float right = _right / getZoom();
+        float bottom = _bottom / getZoom();
 
-        Mat4 translation = Mat4::translation(Vec3(0, 0, -near()));
-        Mat4 scale = Mat4::scale(Vec3(1 / left, 1 / top, 1 / (far() - near())));
+        float tx = -(right + left) / 2;
+        float ty = -(top + bottom) / 2;
+        float tz = (_far + _near) / 2;
+        Mat4 translation = Mat4::translation(Vec3(tx, ty, tz));
+        
+        float sx = 2 / (right - left);
+        float sy = 2 / (top - bottom);
+        float sz = -2 / (_far - _near);
+        Mat4 scale = Mat4::scale(Vec3(sx, sy, sz));
+        
         return scale * translation;
     }
 
@@ -127,8 +137,8 @@ public:
         float f = 1.0 / std::tan(fov_rad / 2);
         Vec4 u1 = Vec4(f / _aspectRatio, 0, 0, 0);
         Vec4 u2 = Vec4(0, f, 0, 0);
-        Vec4 u3 = Vec4(0, 0, (_far + _near) / (_near - _far), (2 * _far * _near) / (_near - _far));
-        Vec4 u4 = Vec4(0, 0, -1, 0);
+        Vec4 u3 = Vec4(0, 0, (_far + _near) / (_far - _near), (2 * _far * _near) / (_near - _far));
+        Vec4 u4 = Vec4(0, 0, 1, 0);
 
         return Mat4::fromRows(u1, u2, u3, u4);
     }

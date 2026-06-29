@@ -22,7 +22,7 @@ const int HEIGHT = 600;
 Scene scene = Scene();
 
 void createObjects() {
-    Vec3 pos = Vec3(1, 0, -2);
+    Vec3 pos = Vec3(0, 0, -2);
     Color color = Color(0xFFFFFFFF);
 
     Geometry::Cube cube = Geometry::Cube(pos, 1);
@@ -34,7 +34,7 @@ void createObjects() {
 }
 
 void createCameras() {
-    Vec3 pos = Vec3(1, 0, 0);
+    Vec3 pos = Vec3(0, 0, 0);
 
     std::unique_ptr<Camera> camera1 = std::make_unique<PerspectiveCamera>(pos, 90, (float)WIDTH / (float)HEIGHT, 0.1, 100);
     scene.add(std::move(camera1));
@@ -44,7 +44,7 @@ void createCameras() {
 }
 
 void createLights() {
-    Vec3 pos = Vec3(2, 2, 2);
+    Vec3 pos = Vec3(5, 5, -2);
 
     std::unique_ptr<Light> light1 = std::make_unique<AmbientLight>(Color(0xffffff));
     scene.add(std::move(light1));
@@ -100,10 +100,16 @@ int main() {
         renderer.render(scene, scene.getCamera(cameraIndex));
         Fragment* fragments = renderer.fragmentBuffer();
 
-        // only write fragments that have been set (non-black color)
-        for (size_t i = 0; i < WIDTH * HEIGHT; ++i) {
-            if (fragments[i].color.x > 0 || fragments[i].color.y > 0 || fragments[i].color.z > 0) {
-                framebuffer[i] = Color::fromVec3(fragments[i].color).value();
+        // write pixels to framebuffer
+        for (int y = 0; y < HEIGHT; ++y) {
+            for (int x = 0; x < WIDTH; ++x) {
+                int srcIndex = y * WIDTH + x;
+                int dstIndex = (HEIGHT - 1 - y) * WIDTH + x; // flip y coordinate
+                Fragment& frag = fragments[srcIndex];
+                // only write fragments that have been set (non-black color)
+                if (frag.color.x > 0 || frag.color.y > 0 || frag.color.z > 0) {
+                    framebuffer[dstIndex] = Color::fromVec3(frag.color).value();
+                }
             }
         }
 

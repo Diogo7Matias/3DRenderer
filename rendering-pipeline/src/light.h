@@ -23,7 +23,7 @@ public:
 
     virtual ~Light() = default;
 
-    virtual Color compute(const Vec3 &vPos, const Vec3 &normal, const Material &material, const Vec3 &cameraPos) const = 0;
+    virtual Color compute(const Vec3 &vPos, const Vec3 &normal, const Material &material) const = 0;
 };
 
 // --------------------------------------------------------------------------
@@ -35,7 +35,7 @@ public:
     AmbientLight(Color color) : Light(color) {}
     AmbientLight() : Light() {}
 
-    Color compute(const Vec3 &vPos, const Vec3 &normal, const Material &material, const Vec3 &cameraPos) const override {
+    Color compute(const Vec3 &vPos, const Vec3 &normal, const Material &material) const override {
         return _color * _intensity * material.ambientK();
     }
 };
@@ -43,16 +43,21 @@ public:
 // --------------------------------------------------------------------------
 
 class PointLight : public Light {
-    Vec3 _position;
+    Vec3 _position; // in World Coordinates
+    Vec3 _viewPosition; // in Camera Coordinates
 
 public:
     PointLight(Vec3 position, Color color, float intensity) : Light(color, intensity), _position(position) {}
     PointLight(Vec3 position, Color color) : Light(color), _position(position) {}
     PointLight(Vec3 position) : Light(), _position(position) {}
 
-    Color compute(const Vec3 &v, const Vec3 &normal, const Material &material, const Vec3 &cameraPos) const override {
-        Vec3 L = (_position - v).normalize();
-        Vec3 V = (cameraPos - v).normalize();
+    void setViewPosition(const Mat4& view) {
+        _viewPosition = (view * _position.toVec4()).toVec3();
+    }
+
+    Color compute(const Vec3 &vPos, const Vec3 &normal, const Material &material) const override {
+        Vec3 L = (_viewPosition - vPos).normalize();
+        Vec3 V = (-vPos).normalize();
         Vec3 H = (L + V).normalize();
 
         float diffuse = std::max(0.0f, normal.dot(L));

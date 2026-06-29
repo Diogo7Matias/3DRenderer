@@ -14,22 +14,27 @@ void Renderer::render(const Scene &scene, const Camera &camera) {
     // clear fragment buffer
     memset(_fragmentBuffer, 0, _window->getWidth() * _window->getHeight() * sizeof(Fragment));
 
+    Mat4 view = camera.viewMatrix();
+    Mat4 projection = camera.projectionMatrix();
+    Mat4 viewport = _window->viewportMatrix();
+    Mat4 normalMatrix = view.inverseTranspose();
+
+    for (Light* light : lights) {
+        if (PointLight* pl = dynamic_cast<PointLight*>(light)) {
+            pl->setViewPosition(view);
+        }
+    }
+    
     for (Vertex &v : vertices) {
         Vec3 &pos = v.position;
-        Vec4 vHomogeneous = pos.toVec4();
-        Mat4 view = camera.viewMatrix();
-        Mat4 projection = camera.projectionMatrix();
-        Mat4 viewport = _window->viewportMatrix();
 
-        pos = (view * vHomogeneous).toVec3();
-
-        // transform normal
-        // Vec4 n = view.inverseTranspose() * Vec4(v.normal.x, v.normal.y, v.normal.z, 0.0f);
-        // v.normal = Vec3(n.x, n.y, n.z).normalize();
+        pos = (view * pos.toVec4()).toVec3();
+        Vec4 n = normalMatrix * Vec4(v.normal.x, v.normal.y, v.normal.z, 0.0f);
+        v.normal = Vec3(n.x, n.y, n.z).normalize();
 
         Color color = Color(0x000000);
         for (Light* light : lights) {
-            color = color + light->compute(pos, v.normal, materials[v.materialIndex], camera.position());
+            color = color + light->compute(pos, v.normal, materials[v.materialIndex]);
         }
 
         pos = (projection * pos.toVec4()).toVec3();
@@ -51,7 +56,7 @@ void Renderer::render(const Scene &scene, const Camera &camera) {
 }
 
 // Writes vertex to fragment buffer
-void Renderer::setFragmentColor(Vec3 &v, Color &color) {
+void Renderer::setFragmentColor(const Vec3 &v, Color &color) {
     int x = (int)v.x;
     int y = (int)v.y;
     

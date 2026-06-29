@@ -28,7 +28,7 @@ public:
     Fragment* fragmentBuffer() const { return _fragmentBuffer; }
 
 private:
-    void setFragmentColor(Vec3 &v, Color &color);
+    void setFragmentColor(const Vec3 &v, Color &color);
     void clipping(Vec3 &v);
     void line(int x0, int y0, int x1, int y1);
 };
