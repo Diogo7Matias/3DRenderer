@@ -29,6 +29,8 @@ public:
 
 private:
     void setFragmentColor(const Vec3 &v, Color &color);
+    Vec3 clipAndProject(const Vec3& pos, const Mat4& projection);
     void clipping(Vec3 &v);
     void line(int x0, int y0, int x1, int y1);
+    void triangle(const Vec3 &p1, const Vec3 &p2, const Vec3 &p3, Color color);
 };

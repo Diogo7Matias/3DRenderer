@@ -13,6 +13,10 @@ void Scene::add(Mesh mesh) {
     for (const auto& edge : mesh.geometry().getEdges()) {
         addEdge(edge.first, edge.second);
     }
+
+    for (const auto& tri : mesh.geometry().getTriangles()) {
+        addTriangle(tri);
+    }
 }
 
 void Scene::add(std::unique_ptr<Camera> camera) {

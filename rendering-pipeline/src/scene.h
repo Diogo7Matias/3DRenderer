@@ -12,6 +12,7 @@
 class Scene {
     std::vector<Vertex> _vertices;
     std::vector<std::pair<int,int>> _edges;
+    std::vector<Triangle> _triangles;
 
     std::vector<Material> _materials;
     
@@ -23,6 +24,7 @@ public:
     
     std::vector<Vertex> vertices() const { return _vertices; }
     std::vector<std::pair<int,int>> edges() const { return _edges; }
+    std::vector<Triangle> triangles() const { return _triangles; }
     std::vector<Material> materials() const { return _materials; }
 
     void add(Mesh mesh);
@@ -45,5 +47,9 @@ private:
 
     void addEdge(int index1, int index2) {
         _edges.push_back(std::make_pair(index1, index2));
+    }
+
+    void addTriangle(Triangle triangle) {
+        _triangles.push_back(triangle);
     }
 };

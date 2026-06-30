@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cmath>
+#include <iostream>
 
 struct Vec4;
 
@@ -20,7 +21,9 @@ struct Vec3 {
     Vec3 operator+(const Vec3& other) const { return {x + other.x, y + other.y, z + other.z}; }
     Vec3 operator-(const Vec3& other) const { return {x - other.x, y - other.y, z - other.z}; }
     Vec3 operator*(float t) const { return {x * t, y * t, z * t}; }
+    Vec3 operator/(float t) const { return {x / t, y / t, z / t}; }
     Vec3 operator- () const { return Vec3(-x, -y, -z); }
+    Vec3& operator+=(const Vec3& other) { x += other.x, y += other.y, z += other.z; return *this; }
 
     ///
     ////// * Methods
@@ -40,5 +43,9 @@ struct Vec3 {
         float length = std::sqrt(x * x + y * y + z * z);
         if (length == 0) return {0, 0, 0};
         return {x / length, y / length, z / length};
+    }
+
+    void print() const {
+        std::cout << "(" << x << ", " << y << ", " << z << ")";
     }
 };

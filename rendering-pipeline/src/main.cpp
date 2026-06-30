@@ -26,7 +26,7 @@ void createObjects() {
     Color color = Color(0xFFFFFFFF);
 
     Geometry::Cube cube = Geometry::Cube(pos, 1);
-    Geometry::Sphere sphere = Geometry::Sphere(pos, 1, 32);
+    Geometry::Sphere sphere = Geometry::Sphere(pos, 1, 16);
     Material mat = DiffuseMaterial(color, 0.40, 1);
 
     Mesh mesh = Mesh(sphere, mat);

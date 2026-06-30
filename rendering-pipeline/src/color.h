@@ -61,4 +61,6 @@ public:
     }
 
     Color operator * (const float t) const { return Color::fromVec3(Vec3(red() * t, green() * t, blue() * t)); }
+
+    Color operator / (const float t) const { return Color::fromVec3(Vec3(red() / t, green() / t, blue() / t)); }
 };
