@@ -1,26 +1,21 @@
-# 3DRenderer
+# 3D Renderer
 
-A C++ project serving as an introduction to graphics programming. <br>
-It covers fundamental concepts for generating 3D images.
+A 3D renderer written in C++, built without graphics APIs, for learning purposes. Therefore, the entire rendering pipeline runs on the CPU.
 
-<i> I intend to expand this project over time. </i>
+This project implements a classical geometry pipeline with scene and camera management, view and projection matrices (both perspective and orthographic), Blinn-Phong illumination with ambient and point lights, flat and Gouraud shading, etc...    
+Geometry can be defined programmatically or loaded from OBJ files.    
 
-## This Project Contains:
-- 3D Rendering Pipeline
-- RayTracing Algorithm
+SDL3 is used for opening a window and displaying the framebuffer. 
 
-## Rendering Pipeline
-Renders a 3D scene with objects, lights and cameras in real time. <br>
-<br>
-It's divided into three main layers:
+### The renderer can be split into three main layers:
 
-- Application - Contains application logic. Allows the user to create a 3D scene with objects, lights and cameras.
+- **Application** - Contains application logic. Allows the user to create a 3D scene with objects, lights and cameras.
 
-- Geometry Processing - Handles mathematical operations such as coordinate space transformations, camera/view transformations, clipping, and lighting calculations.
+- **Geometry Processing** - Handles mathematical operations such as coordinate space transformations, camera/view transformations, clipping, and lighting calculations.
 
-- Rasterization - Converts processed data into pixels and draws the final scene onto the screen. Makes use of SDL3 to assist in the final steps.
+- **Rasterization** - Converts processed data into pixels and draws the final scene onto the screen. Makes use of SDL3 to assist in the final steps.
 
-### Build and run
+## Build and run
 
 Run the following after cloning this repo
 ```s
@@ -38,17 +33,3 @@ Then, inside `/build`
 make
 ./rendering-pipeline
 ```
-
-## RayTracer
-
-A simple recursive ray tracer that renders a scene of spheres with basic lighting, shadows, reflection, and refraction. <br>
-This renderer does not output frames in real time, as it is computationally expensive. Instead it produces a single image. <br>
-<br>
-The ray tracer includes the following features:
-
-- Sphere-based ray–object intersection
-- Diffuse shading with point light sources
-- Hard shadows via shadow-ray checks
-- Recursive reflections and refractions (limited depth)
-- Fresnel-inspired blending between reflection/refraction
-- PPM image output via simple perspective camera
